@@ -86,16 +86,16 @@ public class StudentRegistrationFormPage {
                              String city)
     {
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $$("tbody tr").filterBy(text("Student name")).shouldHave(texts(firstName + " " + lastName));
-        $$("tbody tr").filterBy(text("Student Email")).shouldHave(texts(email));
-        $$("tbody tr").filterBy(text("Gender")).shouldHave(texts(gender));
-        $$("tbody tr").filterBy(text("Mobile")).shouldHave(texts(mobile));
-        $$("tbody tr").filterBy(text("Date of Birth")).shouldHave(texts(dayOfBirth+" "+monthOfBirth+","+yearOfBirth));
-        $$("tbody tr").filterBy(text("Subjects")).shouldHave(texts(subject));
-        $$("tbody tr").filterBy(text("Hobbies")).shouldHave(texts(hobby));
-        $$("tbody tr").filterBy(text("Picture")).shouldHave(texts(picture));
-        $$("tbody tr").filterBy(text("Address")).shouldHave(texts(currentAddress));
-        $$("tbody tr").filterBy(text("State and City")).shouldHave(texts(state+" "+city));
+        $$("tbody tr").filter(text("Student name")).shouldHave(texts(firstName + " " + lastName));
+        $$("tbody tr").filter(text("Student Email")).shouldHave(texts(email));
+        $$("tbody tr").filter(text("Gender")).shouldHave(texts(gender));
+        $$("tbody tr").filter(text("Mobile")).shouldHave(texts(mobile));
+        $$("tbody tr").filter(text("Date of Birth")).shouldHave(texts(dayOfBirth+" "+monthOfBirth+","+yearOfBirth));
+        $$("tbody tr").filter(text("Subjects")).shouldHave(texts(subject));
+        $$("tbody tr").filter(text("Hobbies")).shouldHave(texts(hobby));
+        $$("tbody tr").filter(text("Picture")).shouldHave(texts(picture));
+        $$("tbody tr").filter(text("Address")).shouldHave(texts(currentAddress));
+        $$("tbody tr").filter(text("State and City")).shouldHave(texts(state+" "+city));
     }
 
 
